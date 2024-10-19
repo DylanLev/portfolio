@@ -1,0 +1,41 @@
+{
+    "projects":[
+        {
+            "name": "FreelanceCenter",
+            "technologies": "ReactJS, ExpressJS, NodeJS, MongoDB",
+            "desc": "FreelanceCenter is an innovative online platform connecting freelancers with clients seeking high-tech services. \n\nIt caters to a wide range of skills including code writing, cyber courses, AI services, web design, and digital marketing.\n\nKey Features:\n- User-friendly interface for both freelancers and clients\n- Secure payment system ensuring fair transactions\n- Real-time chat for seamless communication\n- Diverse range of high-tech services offered\n\nFor Freelancers:\n- Create personalized service ads\n- Set custom pricing\n- Showcase professional skills\n- Access to a growing client base\n- Real-time order tracking\n\nFor Clients:\n- Browse a wide array of professional services\n- Easy-to-use order placement system\n- Direct communication with freelancers\n- Secure payment protection\n\nFreelanceCenter aims to foster long-term professional relationships, providing a reliable platform for freelancers to expand their clientele and for businesses to find top-tier talent efficiently. Whether you're a skilled professional looking for flexible work or a company seeking quality freelance services, FreelanceCenter offers a streamlined solution for the modern gig economy.",
+            "images": [
+                "/img/freelancecenter/home.png",
+                "/img/freelancecenter/addnewgig.png",
+                "/img/freelancecenter/addnewgig2.png",
+                "/img/freelancecenter/gigphoto1.png",
+                "/img/freelancecenter/gigphoto2.png",
+                "/img/freelancecenter/gigsphoto.png",
+                "/img/freelancecenter/sellergigs.png"
+
+            ],
+            "link": "https://github.com/DylanLev/FreelanceCenter",
+            "folder": "freelancecenter"
+        },
+        {
+            "name": "Teleport",
+            "technologies": "ReactJS, Telegram Bot, Puppeteer, ExpressJS, NodeJS, MongoDB",
+            "desc": "Teleport is a dynamic platform designed to bridge the gap between digital nomads and influencers worldwide. At its core, it features an interactive map showcasing real-time event updates, exclusive groups, and trending topics relevant to the nomadic lifestyle.\n\nKey Features:\n- Interactive global map with live event updates\n- City insights and vital information for travelers\n- Community-driven content and connections\n- Trending topics curated by and for digital nomads\n\nUnique Telegram Bot Integration:\nTeleport's powerful Telegram bot allows users to interact with and shape the platform in real-time:\n- Create and manage events by sending location and date details\n- Generate new trending topics by sharing YouTube URLs\n- Customize map displays and filter content on-the-fly\n- Access and contribute to city insights directly through chat commands",
+            "images": [
+                "/img/teleport/homemap.png",
+                "/img/teleport/eventsmap.png",
+                "/img/teleport/cities.png",
+                "/img/teleport/cityview.png",
+                "/img/teleport/cityview2.png",
+                "/img/teleport/telegrambot1.jpg",
+                "/img/teleport/telegrambot2.jpg",
+                "/img/teleport/trendingtopics.png"
+                
+            ],
+            "link": "https://github.com/DylanLev/Teleport",
+            "folder": "teleport"
+        }
+
+
+    ]
+}

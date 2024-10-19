@@ -1,0 +1,127 @@
+$primary-color: #003366; // Noble blue color
+$background-color: #002244; // Darker shade of blue
+$text-color: #ffffff; // White text color
+$accent-color: #00a8ff; // Light blue accent color
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: $background-color;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 60px;
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+
+    .initials {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $accent-color;
+      margin-right: 0.5rem;
+    }
+
+    .name {
+      font-size: 1.2rem;
+      color: $text-color;
+    }
+  }
+
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba($background-color, 0.95);
+    backdrop-filter: blur(10px);
+    width: 250px;
+    padding: 2rem;
+    box-shadow: -5px 5px 15px rgba(0,0,0,0.3);
+    border-bottom-left-radius: 10px;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin: 1rem 0;
+        opacity: 0;
+        transform: translateX(20px);
+        transition: all 0.3s ease-in-out;
+
+        @for $i from 1 through 3 {
+          &:nth-child(#{$i}) {
+            transition-delay: $i * 0.1s;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: $text-color;
+          font-size: 1.2rem;
+          transition: all 0.3s ease;
+          position: relative;
+          padding-bottom: 5px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $accent-color;
+            transition: width 0.3s ease;
+          }
+
+          &:hover {
+            color: $accent-color;
+
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    &.open {
+      display: block;
+      transform: translateY(0);
+      opacity: 1;
+
+      ul li {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .burger {
+    background: none;
+    border: none;
+    color: $text-color;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:focus {
+      outline: none;
+    }
+    
+    &:hover {
+      color: $accent-color;
+      transform: scale(1.1);
+    }
+  }
+}
