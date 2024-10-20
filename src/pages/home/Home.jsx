@@ -42,7 +42,7 @@ const Home = () => {
           <span>Python</span>
           <span>C</span>
           <span>Video/Photo Editing</span>
-          <span>Hebrew</span>
+          <span>French</span>
           {/* Add more skills as needed */}
         </div>
       </section>
