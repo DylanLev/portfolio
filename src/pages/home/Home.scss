@@ -162,6 +162,8 @@
 @media (max-width: 768px) {
   .home {
     padding: 1rem;
+    background-color: #f0f0f0; /* white color for mobile */
+    
 
     .hero {
       flex-direction: column-reverse;
